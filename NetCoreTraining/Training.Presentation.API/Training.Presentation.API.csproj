@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Training.Application.Dto\Training.Application.Dto.csproj" />
+    <ProjectReference Include="..\Training.Application.Services\Training.Application.Services.csproj" />
+    <ProjectReference Include="..\Training.Data.Domain\Training.Data.Domain.csproj" />
+    <ProjectReference Include="..\Training.Data.EF\Training.Data.EF.csproj" />
+    <ProjectReference Include="..\Training.Data\Training.Data.csproj" />
+  </ItemGroup>
+
+</Project>
